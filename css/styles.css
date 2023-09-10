@@ -40,7 +40,6 @@ button {
     font-family: inherit;
     border: none;
     cursor: pointer;
-    align-items: center;
 }
 
 body {
@@ -52,7 +51,8 @@ body {
 
 .container{
     width: 1158px;
-    padding: 0 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
     flex-shrink: 0;
 }
@@ -72,6 +72,7 @@ body {
 .header-nav{
     display: flex;
     gap: 76px;
+    align-items: center;
 }
 
 .logo {
@@ -82,6 +83,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 
 }
 
@@ -96,6 +98,8 @@ body {
 
 .header-link{
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 
@@ -127,12 +131,10 @@ body {
     color: var(--c-cont-but);
 }
 
-.section {
-    padding: 120px;
-}
-
 .hero-section{
     background-color: var(--c-background-dark);
+    padding-top: 188px;
+    padding-bottom: 188px;
 
 }
 
@@ -143,15 +145,17 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    max-width: 496px;
 }
 
 .button-pr{
-    display: inline-flex;
+    display: block;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
     color: var(--c-primary-light);
     background-color: var(--c-logo);
     font-size: 16px;
@@ -167,12 +171,41 @@ body {
     background-color: var(--c-cont-but);
 }
 
+.section-content{
+    padding-top: 120px;
+    padding-bottom: 120px
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-content-list{
+    display: flex;
+    gap: 24px;
+}
+
+.section-content-li{
+    flex-basis: calc((100% - 72px) / 4);
+
+}
+
 .section-content-h{
     color: var(--c-primary);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .section-content-p{
@@ -194,10 +227,18 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .section-team-list{
     background-color: var(--c-background-light);
+    flex-basis: calc((100% - 72px) / 4));
+    border-radius: 0px 0px 4px 4px;
+}
+
+.employee{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .section-team-hh{
@@ -206,12 +247,23 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px
+}
+.section-team-list-item{
+    display: flex;
+    gap: 24px;
 }
 
 .section-team-pp{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.section-portfolio{
+    padding: 120px 0 120px 0;
 }
 
 .section-portfolio-title{
@@ -222,6 +274,24 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.section-portfolio-li{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.section-portfolio-list{
+    width: calc((100% - 48px) / 3);
+}
+
+.section-portfolio-inner{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .section-portfolio-h{
@@ -230,6 +300,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .section-portfolio-p{
@@ -241,6 +312,8 @@ body {
 
 .footer{
     background-color: var(--c-primary);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-footer{
@@ -251,6 +324,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-accent-footer{
@@ -263,4 +338,5 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing:0.02em;
+    max-width: 264px;
 }
