@@ -58,7 +58,6 @@ body {
 }
 
 .header{
-    padding: 24px 0;
     border-bottom: 1px solid #E7E9FC;
 }
 
@@ -100,8 +99,6 @@ body {
 
 .header-link{
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 
@@ -144,11 +141,11 @@ body {
 .hero-title{
     color: var(--c-primary-light);
     font-size: 56px;
-    font-size: 700;
+    font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     max-width: 496px;
+    margin: 0 auto;
 }
 
 .button-pr{
@@ -166,7 +163,8 @@ body {
     line-height: 1.5;
     cursor: pointer;
     letter-spacing: 0.04em;
-    margin: 48px;
+    margin: 0 auto;
+    margin-top: 48px;
 }
 
 .button-pr:hover,
