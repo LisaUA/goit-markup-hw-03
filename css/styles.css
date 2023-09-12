@@ -70,7 +70,6 @@ body {
 
 .header-nav{
     display: flex;
-    gap: 76px;
     align-items: center;
 }
 
